@@ -5,7 +5,6 @@ import NumberSelectContainer from "./components/NumberSelect/NumberSelect.Contai
 import NumberSelectSideBarContainer from "./components/NumberSelectSideBar/NumberSelectSideBar.Container";
 import reducers, { namespace } from "./states";
 import { Actions } from "./states/NumberSelectState";
-import DialDemo from "./components/DialDemo/DialDemo";
 const PLUGIN_NAME = "DialerNumberuiPlugin";
 
 export default class DialerNumberuiPlugin extends FlexPlugin {

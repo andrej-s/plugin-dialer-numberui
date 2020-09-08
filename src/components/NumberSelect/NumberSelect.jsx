@@ -17,7 +17,7 @@ const NumberSelect = (props) => {
         Caller Id
       </Caption>
       <StyledSelect
-        value={callerIds[0]}
+        value={props.phoneNumber || callerIds[0]}
         onChange={(e) => props.updateNumber(e.target.value)}
       >
         <MenuItem key="placeholder" value="placeholder" disabled>

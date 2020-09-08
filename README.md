@@ -17,6 +17,8 @@ Each TaskRouter worker should have two new attributes:
 - `callerIds` - an array of caller ids the worker is allowed to use, e.g. `"callerIds":["+160123456","+160654321"]`
 - `autoInvalidate` - boolean, if `true`, a caller id must be picked on every click to dial, if false, Flex will pick the last chosen caller id until changed in the dialpad
 
+If the Flex Action [StartOutboundCall](https://www.twilio.com/docs/flex/ui/actions#voice) is triggered with the attribute `callerId`, the plugin will not overwrite this function and just initiate the call.
+
 ## Setup
 
 Make sure you have [Node.js](https://nodejs.org) as well as [`npm`](https://npmjs.com) installed.
